@@ -11,14 +11,18 @@ default: &default
 
 development:
   <<: *default
-  database: storage/development.sqlite3
+  database: app-lookfy-dev
+  username: rocha
+  password: rocha
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: storage/test.sqlite3
+  database: app-lookfy-test
+  username: rocha
+  password: rocha
 
 
 # SQLite3 write its data on the local filesystem, as such it requires
